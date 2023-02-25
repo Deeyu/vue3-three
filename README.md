@@ -62,6 +62,8 @@ pnpm deps:fresh:minor
 # 补丁版本更新
 pnpm deps:fresh:patch
 
+# 该依赖暂时不可升级，14以上有问题
+"unplugin-auto-import": "^0.13.0"
 ```
 
 - 运行
