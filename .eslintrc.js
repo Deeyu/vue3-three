@@ -2,7 +2,7 @@
  * @Author: DaiYu
  * @Date: 2022-02-21 10:32:53
  * @LastEditors: DaiYu
- * @LastEditTime: 2022-10-18 09:29:41
+ * @LastEditTime: 2023-02-25 12:00:39
  * @FilePath: \.eslintrc.js
  */
 module.exports = {
@@ -15,7 +15,7 @@ module.exports = {
   },
   parser: 'vue-eslint-parser',
   extends: [
-    'eslint:recommended',
+    // 'eslint:recommended',
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
@@ -25,7 +25,7 @@ module.exports = {
     './types/eslintrc-auto-import.json',
   ],
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 12, // 12 | latest
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
     ecmaFeatures: {

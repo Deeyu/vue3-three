@@ -2,8 +2,8 @@
  * @Author: DaiYu
  * @Date: 2022-10-13 11:05:30
  * @LastEditors: DaiYu
- * @LastEditTime: 2022-11-23 11:19:19
- * @FilePath: \build\vite\plugins\index.ts
+ * @LastEditTime: 2023-02-25 09:32:07
+ * @FilePath: \mobile-template\build\vite\plugins\index.ts
  */
 /**
  * @name createVitePlugins
@@ -41,7 +41,9 @@ export function createVitePlugins(viteEnv: ViteEnv, isBuild = false) {
   } = viteEnv
   const vitePlugins: (PluginOption | PluginOption[])[] = [
     // vue支持
-    vue(),
+    vue({
+      // refTransform: true // 开启ref转换
+    }),
     // JSX支持
     vueJsx(),
     Unocss(),
